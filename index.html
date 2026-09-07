@@ -1,22 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio de recetas</title>
+    <!-- Como el index está en la raíz, la ruta directa está perfecta -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>recetas que me gustan</h1>
-    <img src="assets/images/tiramisu-de-cafe.avif" alt="trozo de tiramsu de cafe">
-    <img src=https://statonfoods.com/wp-content/uploads/2025/05/u9552142339_httpss.mj_.run1NNmzGexQmc_Amateur_close-up_from_re_610a2050-e156-4a08-95d7-25935c12753a_2-1-750x907.png alt="tiramisu con frutillas"> 
-<p>Esta es una de mis recetas favoritas</p>
-<img src="https://th.bing.com/th/id/R.820184817ef26f21b9d9c54a4228196a?rik=Y4qCNvrcVBOLkg&pid=ImgRaw&r=0" alt="ingredientes de tiramisu">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qy7dGoBukkc?si=Rk1W5zeSSN3ubTZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <a href="palta reina.html" target="_blank">
-        enlace a palta reina
-    </a>
-    
+    <!-- ETIQUETAS SEMÁNTICAS Y RUTAS DESDE LA RAÍZ A LAS CARPETAS -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Inicio</a></li>
+                <li>Aperitivos
+                    <ul>
+                        <li><a href="receta-salado/espinaca.html" target="_self">Dip Espinaca</a></li>
+                        <li><a href="#" target="_self">Kubbeh</a></li>
+                    </ul>
+                </li>
+                <li>Entradas
+                    <ul>
+                        <li><a href="receta-salado/palta-reina.html" target="_self">Palta Reina</a></li>
+                        <li><a href="#" target="_self">Sopa de Cebolla</a></li>
+                    </ul>
+                </li>
+                <li>Platos de Fondo
+                    <ul>
+                        <li><a href="#" target="_self">Pasta Carbonara</a></li>
+                        <li><a href="receta-salado/salmon-al-horno.html" target="_self">Salmon al horno</a></li>
+                    </ul>
+                </li>
+                <li>Postres
+                    <ul>
+                        <li><a href="#" target="_self">Panqueque</a></li>
+                        <li><a href="receta-dulce/torta-de-chocolate.html" target="_self">Torta de Chocolate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="receta-torta">
+            <h1 class="titulo">Recetas que me gustan</h1>
+            
+            <!-- Les agregué tu clase "imgcho" a todas las fotos para que se centren y mantengan el tamaño -->
+            <img class="imgcho" src="assets/images/tiramisu-de-cafe.avif" alt="trozo de tiramsu de cafe">
+            
+            <!-- Error de comillas corregido en este enlace -->
+            <img class="imgcho" src="https://statonfoods.com/wp-content/uploads/2025/05/u9552142339_httpss.mj_.run1NNmzGexQmc_Amateur_close-up_from_re_610a2050-e156-4a08-95d7-25935c12753a_2-1-750x907.png" alt="tiramisu con frutillas"> 
+            
+            <p style="text-align: center;">Esta es una de mis recetas favoritas</p>
+            
+            <img class="imgcho" src="https://th.bing.com/th/id/R.820184817ef26f21b9d9c54a4228196a?rik=Y4qCNvrcVBOLkg&pid=ImgRaw&r=0" alt="ingredientes de tiramisu">
+
+            <!-- Tu iframe mantenido intacto, solo centrado para que siga el diseño -->
+            <div style="text-align: center; margin-top: 20px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qy7dGoBukkc?si=Rk1W5zeSSN3ubTZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- FOOTER CON REDES SOCIALES PARA CUMPLIR LA PAUTA EN TODAS LAS PÁGINAS -->
+    <footer>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+
 </body>
 </html>
