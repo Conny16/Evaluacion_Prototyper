@@ -32,9 +32,8 @@ h2 {
     color: rgb(78, 34, 26);
 }
 
-/* --- COLORES PERSONALIZADOS POR RECETA --- */
+/*  COLORES PARA CADA RECETA */
 
-/* Torta de Chocolate: Tono moca suave */
 .tema-chocolate {
     background-color: #f4ece6; 
 }
@@ -42,7 +41,6 @@ h2 {
     border: 2px solid #d7c4b7;
 }
 
-/* Dip de Espinaca: Verde menta pastel */
 .tema-espinaca {
     background-color: #eef7f0;
 }
@@ -50,7 +48,6 @@ h2 {
     border: 2px solid #c3e2ca;
 }
 
-/* Palta Reina: Verde palta claro */
 .tema-palta {
     background-color: #f4f7eb;
 }
@@ -58,7 +55,6 @@ h2 {
     border: 2px solid #d1e0a8;
 }
 
-/* Salmón al Horno: Tono salmón/durazno pastel */
 .tema-salmon {
     background-color: #fdf0ec;
 }
